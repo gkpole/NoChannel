@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO)
 
 dp.filters_factory.bind(IsChannelFilter)
 
-@dp.message_handler(commands=start)
+@dp.message_handler(commands="start")
 async def start(message):
     await bot.send_message(f"<b>😁Я бот анти канал чатов!\n Я запрещаю людям писать от имени канала в чатах\n\nНаписал бота > @NoZiss для канала портфолио</b>")
 
